@@ -1,0 +1,3 @@
+Q: why do we use document forgery 
+
+A: We use document forgery as a segmentation task to enhance the precision of our model in distinguishing between genuine and forged regions.

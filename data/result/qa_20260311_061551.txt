@@ -1,0 +1,3 @@
+Q: how a forgery detected ? 
+
+A: Forgery detection involves analyzing documents to identify any tampering or alterations made to the original document. In the context of the provided paper, forgery detection is achieved using a hybrid multi-task learning approach with expert labels for CNN-based segmentation in document forgery detection. The method uses machine learning and computer vision techniques, including CNNs, to identify and segment forged areas from the original document.

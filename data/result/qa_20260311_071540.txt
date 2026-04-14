@@ -1,0 +1,3 @@
+Q: what is document forgery research?
+
+A: <div style='margin-bottom: 16px; font-weight: 500; color: inherit;'>Document forgery research is a field of study that focuses on detecting and preventing forged documents, including digital and handwritten documents. This research aims to develop methods and techniques to accurately identify and segment suspicious regions within documents that have been tampered with or altered, in order to maintain the authenticity and legitimacy of important files.</div>

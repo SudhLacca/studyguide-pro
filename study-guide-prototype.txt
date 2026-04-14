@@ -1,0 +1,52 @@
+study-guide-prototype/
+│
+├── src/
+│   ├── __init__.py
+│   │
+│   ├── data_processing/
+│   │   ├── __init__.py
+│   │   ├── document_parser.py
+│   │   ├── chunk_generator.py
+│   │   └── embedding_generator.py
+│   │
+│   ├── vector_store/
+│   │   ├── __init__.py
+│   │   └── chromadb_service.py
+│   │
+│   ├── agents/
+│   │   ├── __init__.py
+│   │   ├── summarizer.py
+│   │   ├── qa_tool.py
+│   │   └── flashcard_generator.py
+│   │
+│   ├── gemini/
+│   │   ├── __init__.py
+│   │   └── gemini_service.py
+│   │
+│   ├── output/
+│   │   ├── __init__.py
+│   │   └── formatters.py
+│   │
+│   └── utils/
+│       ├── __init__.py
+│       └── helpers.py
+│
+├── app.py                      # Main Streamlit app
+│
+├── data/
+│   ├── uploads/
+│   ├── chroma_db/
+│   └── outputs/
+│
+├── tests/
+│   ├── test_basic.py
+│   └── sample_files/
+│       ├── test.pdf
+│       └── test.txt
+│
+├── .env
+├── .env.example
+├── .gitignore
+├── requirements.txt
+├── config.py
+└── README.md

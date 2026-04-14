@@ -1,0 +1,58 @@
+Project Structure:
+
+/
+|-- .env
+|-- .env.example
+|-- .gitignore
+|-- app.py
+|-- config.py
+|-- flow.txt
+|-- README.md
+|-- requirements.txt
+|-- Study_Guide_Diagram.png
+|-- study-guide-prototype.txt
+|-- test_groq.py
+|-- test_ollama.py
+|
+|-- data/
+|   |-- chroma_db/
+|   |-- result/
+|   `-- uploads/
+|
+|-- src/
+|   |-- __init__.py
+|   |-- agents/
+|   |   |-- __init__.py
+|   |   |-- flashcard_generator.py
+|   |   |-- qa_tool.py
+|   |   `-- summarizer.py
+|   |
+|   |-- data_processing/
+|   |   |-- __init__.py
+|   |   |-- chunk_generator.py
+|   |   |-- document_parser.py
+|   |   |-- embedding_generator.py
+|   |   `-- text_chunker.py
+|   |
+|   |-- gemini/
+|   |   |-- __init__.py
+|   |   `-- gemini_service.py
+|   |
+|   |-- result/
+|   |   |-- __init__.py
+|   |   `-- formatters.py
+|   |
+|   |-- utils/
+|   |   |-- __init__.py
+|   |   `-- helpers.py
+|   |
+|   `-- vector_store/
+|       |-- __init__.py
+|       |-- chroma_store.py
+|       `-- chromadb_service.py
+|
+`-- tests/
+    |-- test_basic.py
+    `-- sample_files/
+        |-- test.pdf
+        `-- test.txt

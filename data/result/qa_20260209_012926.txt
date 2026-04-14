@@ -1,0 +1,3 @@
+Q: what is manual testing 
+
+A: Manual testing is a method of testing a software application where a human tester interacts with the application to identify defects or errors. It involves executing test cases and scenarios to validate the functionality of the software.

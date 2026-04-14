@@ -1,0 +1,3 @@
+Q: What it the difference between machine learning and deep learning?
+
+A: Machine learning and deep learning are related but distinct concepts. Machine learning is a broader field that enables computers to learn from data without explicit programming. It encompasses various types of learning such as supervised, unsupervised, and reinforcement learning. Deep learning, on the other hand, is a subset of machine learning that specifically uses neural networks with multiple layers to learn complex patterns in large amounts of data. In other words, all deep learning is machine learning, but not all machine learning is deep learning.

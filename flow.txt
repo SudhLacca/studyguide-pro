@@ -1,0 +1,184 @@
+Perfect! Now let me create a detailed terminal-based architecture with the complete project structure:
+Terminal-Based Project Structure
+study-guide-generator/
+│
+├── main.py                          # CLI entry point
+│
+├── config/
+│   ├── __init__.py
+│   ├── config.py                    # Configuration settings
+│   └── prompts.py                   # All LLM prompt templates
+│
+├── modules/
+│   ├── __init__.py
+│   │
+│   ├── file_handler/
+│   │   ├── __init__.py
+│   │   ├── file_validator.py       # Validate file type, size, existence
+│   │   └── file_reader.py          # Read PDF, CSV, TXT, DOCX
+│   │
+│   ├── document_processing/
+│   │   ├── __init__.py
+│   │   ├── pdf_processor.py        # Extract text from PDFs
+│   │   ├── csv_processor.py        # Process CSV data
+│   │   ├── text_processor.py       # Clean and normalize text
+│   │   └── document_processor.py   # Main processor orchestrator
+│   │
+│   ├── text_analysis/
+│   │   ├── __init__.py
+│   │   ├── text_chunker.py         # Smart text chunking
+│   │   └── chunk_optimizer.py      # Optimize chunk sizes
+│   │
+│   ├── llm_integration/
+│   │   ├── __init__.py
+│   │   ├── llm_service.py          # Main LLM service
+│   │   ├── api_handler.py          # API calls with retry logic
+│   │   └── response_parser.py      # Parse LLM responses
+│   │
+│   ├── content_generation/
+│   │   ├── __init__.py
+│   │   ├── summary_generator.py    # Generate summaries
+│   │   ├── qa_generator.py         # Generate Q&A pairs
+│   │   ├── flashcard_generator.py  # Generate flashcards
+│   │   └── topic_extractor.py      # Extract main topics
+│   │
+│   ├── study_guide/
+│   │   ├── __init__.py
+│   │   ├── guide_builder.py        # Assemble complete guide
+│   │   └── quality_checker.py      # Validate output quality
+│   │
+│   └── export/
+│       ├── __init__.py
+│       ├── console_display.py      # Rich console output
+│       ├── markdown_exporter.py    # Export as .md
+│       ├── json_exporter.py        # Export as .json
+│       ├── pdf_exporter.py         # Export as .pdf
+│       ├── anki_exporter.py        # Export as Anki deck
+│       └── html_exporter.py        # Export as HTML
+│
+├── utils/
+│   ├── __init__.py
+│   ├── logger.py                    # Logging configuration
+│   ├── token_counter.py             # Count tokens
+│   ├── time_estimator.py            # Estimate processing time
+│   └── helpers.py                   # Utility functions
+│
+├── data/
+│   ├── temp/                        # Temporary file storage
+│   └── output/                      # Generated study guides
+│       ├── markdown/
+│       ├── json/
+│       ├── pdf/
+│       ├── anki/
+│       └── html/
+│
+├── tests/                           # (Optional for now)
+│   └── sample_files/
+│       ├── sample.pdf
+│       ├── sample.csv
+│       └── sample.txt
+│
+├── .env                             # API keys and secrets
+├── .env.example                     # Example environment file
+├── requirements.txt                 # Python dependencies
+├── README.md                        # Documentation
+└── .gitignore                       # Git ignore file
+Key Features of This Architecture:
+1. CLI Interface (main.py)
+
+Interactive menu system
+Command-line arguments support
+Real-time progress display with Rich library
+Error handling and user feedback
+
+2. Modular Design
+
+Each module has a single responsibility
+Easy to test and maintain
+Can add new features without breaking existing code
+
+3. Processing Pipeline Flow
+User Input → File Validation → Document Processing → 
+Text Chunking → LLM Processing → Content Generation → 
+Study Guide Assembly → Export in Multiple Formats
+4. Configuration Management
+
+All settings in config.py
+API keys stored securely in .env
+Easy to switch between different LLM providers
+
+5. Multiple Output Formats
+
+Console display (with colors and formatting)
+Markdown (easy to edit)
+JSON (for programmatic use)
+PDF (professional looking)
+Anki deck (for spaced repetition)
+HTML (interactive, can open in browser)
+
+6. Error Handling & Logging
+
+Comprehensive error messages
+Progress tracking
+Detailed logs for debugging
+Graceful failure handling
+
+7. Local Storage
+
+Temporary files stored in data/temp/
+Output files organized by type in data/output/
+No cloud dependencies
+
+
+How It Will Work (User Experience):
+bash# Basic usage
+python main.py --file lecture_notes.pdf --questions 15 --flashcards
+
+# Interactive mode
+python main.py
+
+# With specific output format
+python main.py --file notes.pdf --output markdown json pdf
+
+# With custom settings
+python main.py --file data.csv --model gpt-4 --chunk-size 3000
+Interactive Menu Example:
+╔══════════════════════════════════════════════════════╗
+║     AI Study Guide Generator v1.0                    ║
+╚══════════════════════════════════════════════════════╝
+
+1. Generate Study Guide from File
+2. View Previous Study Guides
+3. Configure Settings
+4. Exit
+
+Enter your choice: 1
+
+Enter file path: ./my_notes.pdf
+✓ File validated successfully
+
+Select options:
+  [✓] Generate Summary
+  [✓] Generate Q&A Pairs (How many? 10)
+  [✓] Generate Flashcards
+  [✓] Extract Key Topics
+
+Select export formats:
+  [✓] Markdown
+  [✓] PDF
+  [ ] JSON
+  [✓] Anki Deck
+
+Processing... ━━━━━━━━━━━━━━━━━━━━━━━ 100% 
+
+✓ Study guide generated successfully!
+📁 Saved to: data/output/my_notes_study_guide/
+
+Would you like me to now provide the complete working code for all these modules? I'll create them in a way that you can:
+
+Copy each file into the correct folder
+Install dependencies from requirements.txt
+Add your API key to .env
+Run python main.py and start generating study guides
+
+Should I proceed with the full code implementation?

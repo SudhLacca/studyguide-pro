@@ -1,0 +1,67 @@
+# =========================
+# PYTHON / BACKEND
+# =========================
+# Environments
+venv/
+env/
+.venv/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local Databases (CRITICAL to ignore so you don't overwrite each other's data)
+*.db
+*.sqlite3
+users.db
+
+# Vector Database Storage (If ChromaDB is saving locally, it gets massive)
+chroma_db/
+chroma/
+
+# =========================
+# REACT / FRONTEND (Vite)
+# =========================
+# Dependencies
+frontend/node_modules/
+node_modules/
+
+# Production builds
+frontend/dist/
+frontend/dist-ssr/
+dist/
+
+# Vite / Frontend Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# SECRETS & API KEYS
+# =========================
+# NEVER upload your .env files!
+.env
+.env.*
+!.env.example
+
+# =========================
+# OS & EDITOR SPECIFIC
+# =========================
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs (VS Code, PyCharm, etc.)
+.vscode/
+.idea/
+*.swp
+*.swo

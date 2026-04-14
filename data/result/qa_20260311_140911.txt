@@ -1,0 +1,3 @@
+Q: What is this paper about ? 
+
+A: <div style='margin-bottom: 16px; font-weight: 500; color: inherit;'>This paper addresses the issue of document forgery detection using a novel and hybrid technique based on Convolutional Neural Networks (CNNs) for both digital and handwritten documents. It offers a method to accurately identify and delineate suspicious regions within any type of document.</div>
